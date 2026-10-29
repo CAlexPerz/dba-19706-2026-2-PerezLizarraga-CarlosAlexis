@@ -21,13 +21,21 @@ Para resolver este problema se utiliza TLS (Transport Layer Security).
 ### 11.1 Verificar la conexión actual
 
 **Preguntas**
-1. **¿La conexión actual utiliza TLS?**
-1. **¿Qué versión de TLS se está utilizando?**
-1. **¿Qué algoritmo de cifrado aparece?**
-1. **¿Qué diferencia existe entre una conexión protegida con TLS y una conexión sin TLS?**
+1. **¿La conexión actual utiliza TLS?**\
+Sí, el campo `ssl` devuelve `true`.
+1. **¿Qué versión de TLS se está utilizando?**\
+Muestra `TLSv1.2`.
+1. **¿Qué algoritmo de cifrado aparece?**\
+Muestra el conjunto de cifrado activo en la sesión (`TLS_AES_256_GCM_SHA384`).
+1. **¿Qué diferencia existe entre una conexión protegida con TLS y una conexión sin TLS?**\
+TLS cifra el tráfico de red garantizando confidencialidad e integridad, mientras que sin TLS la información viaja en texto claro y puede ser capturada o modificada por terceros en la red.
 ### Evidencias querys
 ![](../recursos/verificacion/tls-05.png)
 ![](../recursos/verificacion/tls-06.png)
 
 ## 12. Actividad 6 — Conexión mediante psql
 
+En mi caso al realizar la practica en Visual Studio Code usando la extensión de PostgreSQL para conectarme a un contenedor de docker con imagen de Postgres:16 opte por llevar a cabo este ejemplo de la manera que se muestra en la imagen de evidencia.
+
+### Evidencias querys
+![](../recursos/verificacion/psql-01.png)
