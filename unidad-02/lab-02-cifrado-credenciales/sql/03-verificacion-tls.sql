@@ -4,6 +4,7 @@ SELECT pgp_sym_decrypt(rfc_cifrado,  'CLAVE-DE-PRUEBA') FROM clientes_protegidos
 
 -- 11. Actividad 5 — Verificar el estado de TLS en PostgreSQL
 -- Consulta:
+ALTER SYSTEM SET ssl = 'on';
 SHOW ssl;
 -- También:
 SHOW ssl_min_protocol_version;
