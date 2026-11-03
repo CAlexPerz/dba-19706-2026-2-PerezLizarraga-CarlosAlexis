@@ -34,11 +34,13 @@ SHOW listen_addresses;
 
 -- 10. Actividad 4 — Revisar pg_hba.conf
 -- Consulta las reglas configuradas:
-SELECT type, database, user_name, address, auth_method FROM pg_hba_file_rules;
+SELECT type, database, user_name, address, auth_method
+FROM pg_hba_file_rules;
 
 -- 16. Actividad 10 — Revisar extensiones
 -- Consulta:
-SELECT    extname,    extversion FROM pg_extension ORDER BY extname;
+SELECT extname, extversion
+FROM pg_extension ORDER BY extname;
 
 -- 17. Actividad 11 — Revisar configuración relacionada con conexiones
 -- Consulta:
