@@ -12,3 +12,10 @@
 **Motor principal:** PostgreSQL 16\
 **Modalidad:** Individual\
 **Duración estimada:** 3 horas
+
+## LAB-04 Hardening y configuración segura de PostgreSQL
+**Unidad: II** — Seguridad, privacidad y control de acceso \
+**Tema:** 2.6 Hardening de bases de datos \
+**Motor:** PostgreSQL 16 \
+**Modalidad:** Individual \
+**Duración estimada:** 3 horas Tipo: Laboratorio técnico
